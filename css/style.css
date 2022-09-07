@@ -22,14 +22,47 @@
 
 }
 
-
-
-
-@media only screen and (max-width: 768px) {
-    /* navbar */
-#navbar a{
-    color: black;
+/* carousel */
+#carousel{
+padding: 3% 2%;
 }
+#carousel img{
+    border-radius: 15px;
+}
+#carousel button:hover{
+    background-color:black;
+    opacity: .4;
+}
+/* our-college & our-vision*/
+.text-section{
+    min-height: 60vh;
+}
+.text-section h1{
+    font-weight: 700;
+}
+/* valuable-desk */
+.nested-grid{
+    min-height: 100vh;
+    padding-top: 5%;
+    background-color: #019267;
+    
+}
+.nested-grid .card{
+background: rgba( 255, 255, 255, 0.15 );
+box-shadow: 15px 2px 13px 1px rgba(0, 0, 0, 0.37);
+backdrop-filter: blur( 7.5px );
+-webkit-backdrop-filter: blur( 7.5px );
+border-radius: 15px;
+color: #F5F5F5;
+}
+.nested-grid h1{
+        font-weight: 700;
+        color: aliceblue;
+
+}
+@media only screen and (max-width: 767px) {
+    /* navbar */
+
 .navbar-brand{
     width: 60%;
 }

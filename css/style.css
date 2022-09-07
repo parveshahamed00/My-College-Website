@@ -1,0 +1,36 @@
+/* navbar */
+#navbar nav{
+    padding:.2% 0;
+}
+.navbar-brand img{
+    background-color: aliceblue;
+    padding:.7% 1%;
+    border-radius: 10px;
+    width: 100%;
+    
+}
+.navbar-brand{
+    width:auto;
+    /* background-color: aquamarine; */
+    width: 25%;
+}
+#navbar li a{
+    font-size: 1.1em;
+}
+#navbar li a:hover{
+    text-decoration: underline;
+
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    /* navbar */
+#navbar a{
+    color: black;
+}
+.navbar-brand{
+    width: 60%;
+}
+}

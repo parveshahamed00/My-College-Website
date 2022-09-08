@@ -29,6 +29,7 @@ padding: 3% 2%;
 #carousel img{
     border-radius: 15px;
 }
+
 #carousel button:hover{
     background-color:black;
     opacity: .4;
@@ -54,6 +55,11 @@ backdrop-filter: blur( 7.5px );
 -webkit-backdrop-filter: blur( 7.5px );
 border-radius: 15px;
 color: #F5F5F5;
+}
+.nested-grid .card:hover{
+    background: transparent;
+box-shadow: 15px 10px 13px 8px rgba(0, 0, 0, 0.37);
+
 }
 .nested-grid h1{
         font-weight: 700;

@@ -1,2 +1,2 @@
-previwe-link: https://parveshahamed00-my-college.netlify.app/
+Preview-link: https://parveshahamed00-my-college.netlify.app/
 

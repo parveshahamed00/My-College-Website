@@ -1,138 +1,156 @@
 /* navbar */
-#navbar nav{
-    padding:.2% 0;
+#navbar nav {
+  padding: 0.2% 0;
 }
-.navbar-brand img{
-    background-color: aliceblue;
-    padding:.7% 1%;
-    border-radius: 10px;
-    width: 100%;
-    
+.navbar-brand img {
+  background-color: aliceblue;
+  padding: 0.7% 1%;
+  border-radius: 10px;
+  width: 100%;
 }
-.navbar-brand{
-    width:auto;
-    /* background-color: aquamarine; */
-    width: 25%;
+.navbar-brand {
+  width: auto;
+  /* background-color: aquamarine; */
+  width: 25%;
 }
-#navbar li a{
-    font-size: 1.1em;
+#navbar li a {
+  font-size: 1.1em;
 }
-#navbar li a:hover{
-    text-decoration: underline;
-
+#navbar li a:hover {
+  text-decoration: underline;
 }
 
 /* carousel */
-#carousel{
-padding: 3% 2%;
+#carousel {
+  padding: 3% 2%;
 }
-#carousel img{
-    border-radius: 15px;
+#carousel img {
+  border-radius: 15px;
 }
 
-#carousel button:hover{
-    background-color:black;
-    opacity: .4;
+#carousel button:hover {
+  background-color: black;
+  opacity: 0.4;
 }
 /* our-college & our-vision*/
-.text-section{
-    min-height: 60vh;
+.text-section {
+  min-height: 60vh;
 }
-.text-section h1{
-    font-weight: 700;
+.text-section h1 {
+  font-weight: 700;
 }
 /* valuable-desk & hall-of-fame */
-.nested-grid{
-    min-height: 100vh;
-    padding: 6% 0;
-    
-    background-color: #019267;
-    
-}
-.nested-grid .card{
-background: rgba( 255, 255, 255, 0.15 );
-box-shadow: 15px 2px 10px 3px rgba(0, 0, 0, 0.37);
-backdrop-filter: blur( 7.5px );
--webkit-backdrop-filter: blur( 7.5px );
-border-radius: 15px;
-color: #F5F5F5;
-}
-#valuable-desk.nested-grid .card:hover{
-    background: transparent;
-box-shadow: 15px 10px 13px 8px rgba(0, 0, 0, 0.37);
+.nested-grid {
+  min-height: 100vh;
+  padding: 6% 0;
 
+  background-color: #019267;
 }
-#hall-of-fame.nested-grid .card{
-    box-shadow: -15px 2px 10px 3px rgba(0, 0, 0, 0.37);
-
+.nested-grid .card {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 15px 2px 10px 3px rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 15px;
+  color: #f5f5f5;
 }
-#hall-of-fame.nested-grid .card:hover{
-    background: transparent;
-    box-shadow: -15px 10px 13px 8px rgba(0, 0, 0, 0.37);
-
+#valuable-desk.nested-grid .card:hover {
+  background: transparent;
+  box-shadow: 15px 10px 13px 8px rgba(0, 0, 0, 0.37);
 }
-.nested-grid h1{
-        font-weight: 700;
-        color: aliceblue;
-
+#hall-of-fame.nested-grid .card {
+  box-shadow: -15px 2px 10px 3px rgba(0, 0, 0, 0.37);
 }
-.nested-grid h6{
-    font-style: oblique;
+#hall-of-fame.nested-grid .card:hover {
+  background: transparent;
+  box-shadow: -15px 10px 13px 8px rgba(0, 0, 0, 0.37);
 }
-.nested-grid p{
-    color:#E8F9FD;
+.nested-grid h1 {
+  font-weight: 700;
+  color: aliceblue;
 }
-.nested-grid p span{
-    color:#FEDB39;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+.nested-grid h6 {
+  font-style: oblique;
 }
-#hall-of-fame img{
-    background-color:#FEDB39;
+.nested-grid p {
+  color: #e8f9fd;
+}
+.nested-grid p span {
+  color: #fedb39;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+#hall-of-fame img {
+  background-color: #fedb39;
 }
 /* our-achievers-work-with & our-achievements*/
-#our-achievers-work-with h1,#our-achievements h1{
-        font-weight: 700;
-
+#our-achievers-work-with h1,
+#our-achievements h1 {
+  font-weight: 700;
 }
-#our-achievers-work-with img:hover{
-    background-color:azure;
-    box-shadow: 6px 5px 10px 3px rgba(0, 0, 0, 0.37);
-
-
+#our-achievers-work-with img:hover {
+  background-color: azure;
+  box-shadow: 6px 5px 10px 3px rgba(0, 0, 0, 0.37);
 }
-#our-achievements .col-6 div{
-    padding: 3% 6%;
-background: rgba( 255, 255, 255, 0.15 );
-box-shadow: 6px 2px 10px  rgba(0, 0, 0, 0.37);
-backdrop-filter: blur( 7.5px );
--webkit-backdrop-filter: blur( 7.5px );
-border-radius: 10px;
-margin: 5% 0;
+#our-achievements .col-6 div {
+  padding: 3% 6%;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 6px 2px 10px rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  margin: 5% 0;
 }
-#our-achievements .col-6 h1{
-    color: #019267;
-margin-bottom: 10%;
+#our-achievements .col-6 h1 {
+  color: #019267;
+  margin-bottom: 10%;
 }
-#our-achievements .col-6 div:hover h1{
-    color:green;
-
+#our-achievements .col-6 div:hover h1 {
+  color: green;
 }
-#our-achievements .col-6 div:hover span{
-    color: crimson;
-    font-weight: 700;
+#our-achievements .col-6 div:hover span {
+  color: crimson;
+  font-weight: 700;
 }
-#our-achievements .col-6 div:hover{
-    box-shadow: 6px 6px 10px 3px rgba(0, 0, 0, 0.37);
-
+#our-achievements .col-6 div:hover {
+  box-shadow: 6px 6px 10px 3px rgba(0, 0, 0, 0.37);
 }
-
-
+/* footer */
+#footer .logo {
+  background-color: aliceblue;
+  padding: 0.7% 1%;
+  border-radius: 10px;
+}
+#footer{
+    background-color: #019267;
+    padding:4% 0;
+}
+#footer h2 {
+  font-weight: 700;
+  padding:5% 0 ;
+  color: #f5f5f5;
+}
+#footer a{
+    background-color:#EAF6F6;
+    padding: 2.4%;
+    font-size: 1.2em;
+    border-radius: 50%;
+    margin: 0 .4%;
+    color:black;
+}
+#footer a:hover {
+    background-color:#1B2430;
+    color: #EAF6F6;
+}
+/* developer-contact */
+#developer-contact a{
+    text-decoration: none;
+}
 /* media-query */
 @media only screen and (max-width: 767px) {
-    /* navbar */
+  /* navbar */
 
-.navbar-brand{
+  .navbar-brand {
     width: 60%;
-}
+  }
 }

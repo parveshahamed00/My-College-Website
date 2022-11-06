@@ -1,3 +1,3 @@
 exports.home=(req,res)=>{
-    res.send("Hello world")
+    res.sendFile(__dirname+"/index.html")
 }

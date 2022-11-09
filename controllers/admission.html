@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sadakathullah Appa College</title>
+    <!-- icon -->
+    <link
+      rel="shortcut icon"
+      href="images/favicon/logo.jpeg"
+      type="image/x-icon"
+    />
+  </head>
+  <!-- bootstrap -->
+  <!-- CSS only -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+  />
+  <body>
+    <h1 class="text-center py-4">Online Admission Form</h1>
+    <form action="/admission" method="post">
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-md-4">
+            <div class="form-floating">
+              <input
+                name="name"
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="example"
+                required
+              />
+              <label>Name :</label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-floating">
+              <input
+                name="email"
+                type="email"
+                class="form-control"
+                id="name"
+                placeholder="example"
+                required
+              />
+              <label>Email 📩</label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-floating">
+              <input
+                name="phone"
+                type="text"
+                class="form-control"
+                id="name"
+                pattern="[0-9]{10}"
+                placeholder="example"
+                required
+              />
+              <label>Phone No :</label>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-3 py-5">
+          <div class="col-md-4 d-flex justify-content-between">
+            <p>Gender :</p>
+            <div>
+              <input type="radio" name="gender" value="male" required />
+              <label for="male">male</label><br />
+              <input type="radio" name="gender" value="female" required />
+              <label for="female">female</label><br />
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-around">
+            <p>Date-of-Birth :</p>
+            <div><input type="date" name="dob" required/></div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-around">
+            <p>HSE-Percentage :</p>
+            <div>
+              <input
+              required
+                type="number"
+                name="hsc_percentage"
+                max="100"
+                placeholder="High-School (%)"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row gy-3">
+          <div class="col-md-4"><p>Select major & domain you need :</p></div>
+          <div class="col-md-4">
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="inputGroupSelect01"
+                >Major</label
+              >
+              <select
+                required
+                class="form-select"
+                id="inputGroupSelect01"
+                name="major"
+              >
+                <option selected>Under Graduate (UG)</option>
+                <option value="Post Graduate">Post Graduate (PG)</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="inputGroupSelect01"
+                >Domain</label
+              >
+              <select
+                required
+                class="form-select"
+                id="inputGroupSelect01"
+                name="domain"
+              >
+                <option selected>Information Technology (IT)</option>
+                <option value="Computer Science">Computer Science (CS)</option>
+                <option value="Computer Applications">
+                  Computer Application (CA)
+                </option>
+                <option value="English">English</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Biotechnology">Biotechnology</option>
+                <option value="Agriculture">Agriculture</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-3">
+          <div class="col-md-4">
+            <div class="form-floating">
+              <textarea
+                required
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea2"
+                style="height: 140px"
+                name="address"
+              ></textarea>
+              <label for="address">Address :</label>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex align-items-end  justify-content-center">
+            <div>
+              <input type="checkbox" name="checkbox" required />
+              <label for="checkbox"
+                >I agree to all <span style="color:#5a5af2; cursor: pointer;">terms and conditions</span></label
+              >
+            </div>
+          </div>
+          <div class="col-md-4 d-flex align-items-end justify-content-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

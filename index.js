@@ -23,4 +23,6 @@ connect();
 app.use("/", require("./routes/home"));
 app.use("/", require("./routes/admission"));
 app.use("/", require("./routes/admission-post"));
+app.use("/", require("./routes/attendance"));
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));

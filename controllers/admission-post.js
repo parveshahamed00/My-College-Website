@@ -18,7 +18,8 @@ exports.admissionPost=(req,res)=>{
            res.sendStatus(500);
          } else {
            console.log("Scuessfully Saved to database");
-        //    res.sendFile(__dirname + "/add-student-success.html");
+
+           res.sendFile(__dirname + "/admission-success.html");
          }
        });
 }

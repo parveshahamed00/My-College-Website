@@ -10,3 +10,4 @@ const admissionSchema = new mongoose.Schema({
   domain: String,
   address: String,
 });
+exports.admission=mongoose.model("admission",admissionSchema)

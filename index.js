@@ -26,7 +26,6 @@ app.use("/", require("./routes/admission-post"));
 app.use("/", require("./routes/attendance"));
 app.use("/", require("./routes/attendance-post"));
 app.use("/", require("./routes/time-table"));
-app.use("/", require("./routes/time-table-post"));
 
 
 

@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello !!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sadakathullah Appa College</title>
+    <!-- icon -->
+    <link
+      rel="shortcut icon"
+      href="images/favicon/logo.jpeg"
+      type="image/x-icon"
+    />
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <style>
+      h2,
+      h3, h4 {
+        color: #f8f1f1;
+        font-weight: 700;
+      }
+      .name,
+      .rollNo, .department {
+        color: #e6fced;
+        font-weight: 600;
+        font-style: oblique;
+      }
+      .container {
+        border-radius: 10px;
+        background-color: #3cc36d;
+      }
+      h1 {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: #e6fced;
+        font-size: 2.8em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5 p-5">
+      <div class="row gy-5">
+        <div class="col-sm-6">
+          <h2>Name : <span class="name"> <%= doc.name %> </span></h2>
+          <h3 class="my-3">Roll-No : <span class="rollNo"> <%= doc.rollNo %> </span></h3>
+          <h4>Department : <span class="department"> <%= doc.department %> </span></h4>
+        </div>
+        <div class="col-sm-6">
+          <h2 class="text-sm-center">Attendance-Percentage (%)</h2>
+          <h1 class="attendance text-sm-center mt-4"><%= doc.attendance %></h1>
+        </div>
+      </div>
+    </div>
+    <script>
+      let attendance_percentage = document.querySelector("h1");
+      //  let p=attendance_percentage.innerHTML
+      //  console.log(attendance_percentage);
+      if (attendance_percentage.innerText < 60) {
+        attendance_percentage.style.color = "#fa0905";
+      }
+    </script>
+  </body>
 </html>

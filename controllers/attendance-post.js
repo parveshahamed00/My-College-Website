@@ -15,6 +15,7 @@ exports.attendance = (req, res) => {
           console.log("Student Not fount in database");
         } else {
             // console.log(docs);
+            res.render("attendance",{doc:docs})
         }
       } else {
         console.log(err);

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sadakathullah Appa College</title>
+    <!-- icon -->
+    <link
+      rel="shortcut icon"
+      href="images/favicon/logo.jpeg"
+      type="image/x-icon"
+    />
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        min-height: 100vh;
+      }
+      span {
+        font-style: oblique;
+        font-weight: 600;
+        color: azure;
+      }
+      h2 {
+        color: aliceblue;
+        font-weight: 800;
+      }
+      .container {
+        border-radius: 10px;
+      }
+      .information {
+        background-color: #c24343;
+      }
+      .marks h3 {
+        font-weight: 700;
+      }
+      .marks {
+        color: #312e2e;
+      }
+      img {
+        border-radius: 50%;
+        background-color: #f7f75c;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="container information mt-2 p-4 px-5 d-flex justify-content-between align-items-center"
+    >
+      <div>
+        <h2>Name : <span><%=doc.name %> </span></h2>
+        <h2>Roll-No : <span><%=doc.rollNo %> </span></h2>
+      </div>
+      <div>
+        <img
+          src="<%= doc.imageURL %> "
+          class="img-fluid"
+          alt="student image"
+          width="100"
+        />
+      </div>
+    </div>
+    <div class="container marks mt-3">
+      <div class="row text-center mark-row">
+        <div class="col-4 my-2"><h3>Sub-title</h3></div>
+        <div class="col-4 my-2"><h3>Sub-code</h3></div>
+        <div class="col-4 my-2"><h3>Marks</h3></div>
+        <% for( let i = 0; i < doc.date.length; i++ ) { %>
+        <div class="col-4 my-2 title"><h4><%= doc.subName[i] %></h4></div>
+        <div class="col-4 my-2 code"><h4><%= doc.subCode[i] %></h4></div>
+        <div class="col-4 my-2 mark">
+          <h4 id="mark"><%= doc.marks[i] %></h4>
+        </div>
+        <% } %>
+      </div>
+    </div>
+  
+  </body>
+</html>

@@ -29,6 +29,8 @@ app.use("/", require("./routes/time-table"));
 app.use("/", require("./routes/result"));
 app.use("/", require("./routes/result-post"));
 app.use("/", require("./routes/hall-ticket"));
+app.use("/", require("./routes/hall-ticket-post"));
+
 
 
 

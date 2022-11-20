@@ -22,6 +22,7 @@
     />
     <style>
       body {
+        padding-bottom: 2%;
         min-height: 100vh;
         background-color: #dfdfdf;
       }
@@ -52,12 +53,23 @@
         font-style: italic;
         font-weight: 500;
       }
-      .information h4,.hall-ticket h4 {
+      .information h4,
+      .hall-ticket h4 {
         font-weight: 700;
       }
-      .hall-ticket .col-3{
+      .hall-ticket .col-3 {
         display: flex;
         justify-content: center;
+      }
+      .hall-ticket {
+        background-color: #ffffff;
+        border: 1px solid #075106;
+        border-radius: 10px;
+      }
+      .invigilator-sign {
+        border: 1px solid green;
+        width: 70%;
+        border-radius: 5px;
       }
     </style>
   </head>
@@ -68,32 +80,37 @@
           <h2>April 2022 semester exam Hall-ticket</h2>
         </div>
         <div class="logo">
-          <img src="../public/images/navbar-brand.png" alt="logo" width="200" />
+          <img src="/images/navbar-brand.png" alt="logo" width="200" />
         </div>
       </div>
     </div>
     <div class="container information d-flex justify-content-around my-2 py-3">
       <div>
-        <h4>Name : <span>Parvesh</span></h4>
-        <h4>Roll : <span>20sit35</span></h4>
-        <h4>Department : <span>Information Technology</span></h4>
+        <h4>Name : <span><%= doc.name %> </span></h4>
+        <h4>Roll : <span><%= doc.rollNo %> </span></h4>
+        <h4>Department : <span><%= doc.department %> </span></h4>
       </div>
       <div>
-        <img
-          src="../public//images/hall-of-fame/ramakrishnan.png"
-          alt="student-image"
-          width="100"
-        />
+        <img src="<%= doc.imageURL %> " alt="student-image" width="100" />
       </div>
     </div>
 
-    <div class="container hall-ticket mt-3">
-      <div class="row">
+    <div class="container hall-ticket mt-2 py-5">
+      <div class="row gy-3">
         <div class="col-3"><h4>Exam date :</h4></div>
         <div class="col-3"><h4>Subject name :</h4></div>
         <div class="col-3"><h4>Subject code :</h4></div>
         <div class="col-3"><h4>Invigilator sign :-</h4></div>
+        <% for( let i = 0; i < doc.date.length; i++ ) { %>
+        <div class="col-3"><h5><%= doc.date[i] %></h5></div>
+        <div class="col-3"><h5><%= doc.subName[i] %></h5></div>
+        <div class="col-3"><h5><%= doc.subCode[i] %></h5></div>
+        <div class="col-3"><div class="invigilator-sign"></div></div>
+        <% } %>
       </div>
+    </div>
+    <div class="container d-flex justify-content-end mt-4">
+      <button type="submit" class="btn btn-danger">⬇️ Download</button>
     </div>
   </body>
 </html>
